@@ -45,12 +45,10 @@ function process($part) {
             }
         
             ksort($m);
-            print_r($m);
             $f = $m[array_key_first($m)];
             $e = $m[array_key_last($m)];
         
             $s = intval($f.$e);
-            print_r($s."\n");
             $sum += $s;
         }
     }
